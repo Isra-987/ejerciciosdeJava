@@ -19,9 +19,8 @@ public class Ejercicio17 {
     public static void main(String[] args) {
         // TODO code application logic here
         /*
-        Realizar un algoritmo que rellene un vector de tamaño N con valores aleatorios y le pida al
-        usuario un numero a buscar en el vector. El programa mostrará donde se encuentra el
-        numero y si se encuentra repetido
+        Recorrer un vector de N enteros contabilizando cuántos números son de 1 dígito, cuántos
+        de 2 dígitos, etcétera (hasta 5 dígitos).
         */ 
         int n;
         Scanner leer = new Scanner(System.in);
@@ -59,7 +58,7 @@ public class Ejercicio17 {
         cont3 = 0;
         cont4 = 0;
         cont5 = 0;
-        for (int i = 0; i < vector.length; i++){
+        for (int i = 0; i < n; i++){
             if (vector[i] < 10){
                 cont1++;
             } else if (vector[i] < 100){
